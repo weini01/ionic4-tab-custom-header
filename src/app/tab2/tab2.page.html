@@ -1,9 +1,7 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content></ion-content>
+<ca-header title="Page Two" description="Click Child Page to go next" [backButton]="true" backButtonHref="/tabs/tab2">
+
+  <ion-button routerLink="/tabs/tab2/child">Child Page</ion-button>
+  <ion-button routerLink="/tabs/tab2/child2">Child2 Page</ion-button>
+
+</ca-header>
